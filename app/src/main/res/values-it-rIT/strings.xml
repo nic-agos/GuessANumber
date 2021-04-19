@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GuessANumber</string>
+    <string name="_ok">VAI</string>
+    <string name="_del">CANC</string>
+    <string name="_start">INIZIA</string>
+</resources>

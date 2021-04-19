@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name = "emoticons_height">40dp</dimen>
-    <dimen name = "button_horizontal_space">8dp</dimen>
-    <dimen name = "button_vertical_space">8dp</dimen>
-    <dimen name = "clNumPad_bottom_height">20dp</dimen>
+    <dimen name = "lives_height">40dp</dimen>
+    <dimen name = "button_horizontal_space">4dp</dimen>
+    <dimen name = "button_horizontal_margin">16dp</dimen>
+    <dimen name = "button_vertical_space">4dp</dimen>
+    <dimen name = "clNumPad_bottom_height">40dp</dimen>
+    <dimen name = "start_bottom_padding">90dp</dimen>
 </resources>
