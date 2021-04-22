@@ -92,14 +92,14 @@ class MainActivity : AppCompatActivity() {
                     myBind.tvInput.setText(R.string.empty)
                 }
                 if(res == "TOO BIG"){
-                    myBind.tvLives.setText(R.string.rem_att + (game.getMaxAttempts() - game.getAttempts()))
+                    myBind.tvLives.text = getString(R.string.rem_att) + (game.getMaxAttempts() - game.getAttempts())
                     myBind.ivState.setImageResource(R.drawable.too)
                     myBind.tvInput.setText(R.string.empty)
                     myBind.tvResult.setText(R.string.too_big)
                     Log.v(TAG, "Too big")
                 }
                 if(res == "TOO SMALL"){
-                    myBind.tvLives.setText(R.string.rem_att + (game.getMaxAttempts() - game.getAttempts()))
+                    myBind.tvLives.text = getString(R.string.rem_att) + (game.getMaxAttempts() - game.getAttempts())
                     myBind.ivState.setImageResource(R.drawable.too)
                     myBind.tvInput.setText(R.string.empty)
                     myBind.tvResult.setText(R.string.too_small)
@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
                 myBind.tvResult.setText(R.string.empty)
                 myBind.tvInput.setText(R.string.empty)
                 myBind.ivState.setImageResource(R.drawable.wait)
-                myBind.tvLives.setText(R.string.rem_att + game.getMaxAttempts())
+                myBind.tvLives.text = getString(R.string.rem_att) + game.getMaxAttempts().toString()
                 myBind.btnStart.visibility = View.INVISIBLE
                 for (btn in btns) {
                     btn.isEnabled = true

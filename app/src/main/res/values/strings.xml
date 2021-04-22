@@ -20,5 +20,5 @@
     <string name="you_win">YOU WIN</string>
     <string name="you_loose">YOU LOOSE</string>
     <string name="empty"></string>
-    <string name="rem_att">Remained attempts:</string>
+    <string name="rem_att">"Remained attempts: "</string>
 </resources>
