@@ -4,8 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 28
     buildToolsVersion "30.0.3"
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "it.agostinelli.guessanumber"

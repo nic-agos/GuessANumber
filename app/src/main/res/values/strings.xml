@@ -13,4 +13,12 @@
     <string name="_0" translatable="false">0</string>
     <string name="_ok">OK</string>
     <string name="_start">START</string>
+    <string name="start_message">Click START to play</string>
+    <string name="welcome">Welcome!</string>
+    <string name="too_small">TOO SMALL</string>
+    <string name="too_big">TOO BIG</string>
+    <string name="you_win">YOU WIN</string>
+    <string name="you_loose">YOU LOOSE</string>
+    <string name="empty"></string>
+    <string name="rem_att">Remained attempts:</string>
 </resources>

@@ -4,4 +4,12 @@
     <string name="_ok">VAI</string>
     <string name="_del">CANC</string>
     <string name="_start">INIZIA</string>
+    <string name="start_message">Clicca INIZIA per giocare</string>
+    <string name="welcome">Benvenuto!</string>
+    <string name="too_small">TROPPO PICCOLO</string>
+    <string name="too_big">TROPPO GRANDE</string>
+    <string name="you_win">HAI VINTO</string>
+    <string name="you_loose">HAI PERSO</string>
+    <string name="empty">" "</string>
+    <string name="rem_att">"Tentativi rimasti: "</string>
 </resources>

@@ -10,9 +10,13 @@
         android:id="@+id/tvLives"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/lives_height"
+        android:layout_marginTop="@dimen/start_bottom_padding"
+        android:layout_marginBottom="16dp"
+        android:text="@string/welcome"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivState"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,8 +24,10 @@
         android:id="@+id/ivState"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,8 +38,11 @@
         android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/button_horizontal_margin"
+        android:text="@string/start_message"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivState" />
@@ -126,7 +135,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btn3" />
 
         <Button
-            android:id="@+id/bnt7"
+            android:id="@+id/btn7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/button_horizontal_margin"
@@ -148,7 +157,7 @@
             android:backgroundTint="@color/orange"
             android:text="@string/_8"
             app:layout_constraintEnd_toStartOf="@+id/btn9"
-            app:layout_constraintStart_toEndOf="@+id/bnt7"
+            app:layout_constraintStart_toEndOf="@+id/btn7"
             app:layout_constraintTop_toBottomOf="@+id/btn5" />
 
         <Button
@@ -175,7 +184,7 @@
             android:text="@string/_del"
             app:layout_constraintEnd_toStartOf="@+id/btn0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bnt7" />
+            app:layout_constraintTop_toBottomOf="@+id/btn7" />
 
         <Button
             android:id="@+id/btn0"
@@ -208,10 +217,25 @@
         android:id="@+id/btnStart"
         android:layout_width="173dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="@dimen/start_bottom_padding"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/_start"
         app:layout_constraintBottom_toTopOf="@+id/clNumPad"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/clNumPad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
